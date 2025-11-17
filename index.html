@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"
     <title>Glacê Confeitaria</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/logo glace.png">
 </head>
 <body>
     <header>
@@ -20,33 +21,67 @@
             </ul>
         </nav>
     </header>
+
     <section id="home" class="hero"> <!-- Hero section é a primeira grande sessão , a q aparece logo de cara-->
+        <img class="logo-central" src="imagens/glace.png" alt="Logo Glacê">
         <h2>Bem-vindo á Glacê Confeitaria</h2>
-        <p>Doces feitos com amor e dedicação</p>
-        <a href="#produtos" class="button">Ver produtos</a>
+        <p>Confeitaria com amor e carinho em cada detalhe</p>
+        <a class="button" href="#produtos">Ver produtos</a>
     </section>
+
 
     <section id="produtos" class="produtos">
         <h2>Nossos produtos</h2>
-        <div class="grid"> <!-- Grid = Grade ,usado para organizar em blocos alinhados-->
-            <div class="card"><h3>Copos</h3></div>
-            <div class="card"><h3>Tortas</h3></div>
-            <div class="card"><h3>Doces em geral</h3></div>
+
+        <div class="lista-produtos"> <!-- Grid = Grade ,usado para organizar em blocos alinhados-->
+
+            <div classe="card">
+            <img src="imagens/copo ninho.png" alt="Produto 1">
+            <h3>Copo Ninho com Morango</h3>
+                <p>150ml</p>
+                <span class="preco">12.49</span>
+                <button onclick="addCarrinho('Copo Ninho com Morango', 12.49)">Adicionar</button>
         </div>
+
+        <div classe="card">
+            <img src="imagens/ferreiro roche.png" alt="Produto 2">
+            <h3>Copo Ferreiro Rocher</h3>
+                <p>150ml</p>
+                <span class="preco">12.49</span>
+                <button onclick="addCarrinho('Copo Ferreiro Rocher', 12.49)">Adicionar</button>
+        </div>
+
+        <div classe="card">
+            <img src="imagens/bombom morango.png" alt="Produto 3">
+            <h3>Bombom aberto de morango</h3>
+                <p>180ml</p>
+                <span class="preco">10.00</span>
+                <button onclick="addCarrinho('Bombom aberto de morango', 10.00)">Adicionar</button>
+        </div>
+
+        <div classe="card">
+            <h3>Surpresa de uva</h3>
+                <p>180ml</p>
+                <span class="preco">9.49</span>
+                <button onclick="addCarrinho('Surpresa de uva', 9.49)">Adicionar</button>
+                <img src="imagens/surpresa de uva.png" alt="Produto 4">
+        </div>
+
     </section>
     <section id="sobre" class="sobre">
         <h2>Sobre Nós</h2>
-        <p>Confeitaria caseira com amor em cada detalhe</p>
+        <p>A Glacê Confeitaria foi fundada em 2025 por Ester </br>
+            , que transformou sua paixão por doces caseiros em sabor para encantar.</br> Aqui você encontra bolos de pote, bombons, tortas, cookies e brownies, todos feitos com carinho e qualidade. </br> Cada doce é preparado artesanalmente para deixar o seu dia mais gostoso.</p>
     </section>
 
     <section id="contato" class="contato">
         <h2>Contato</h2>
         <p>WhatsApp:(31)8788-0429</p>
-        <p>Instagram: @confeitaria_glace></p>
+        <p>Instagram: @confeitaria_glace</p>
         <p>Localização: Rua Guaraci,108 - Lago Azul Ibirité-MG 32415-359</p>
         </section>
         <footer>
-            <p>2025 Glacê Confeitaria</p>
+            <p>© 2025 Glacê Confeitaria</p>
         </footer>
         <script src="script.js"></script>
 </body>
