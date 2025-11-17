@@ -177,18 +177,32 @@
 
         
         <!-- CARRINHO -->
-           <section id="carrinho" class="contato">
-    <h1>🛒 Carrinho</h1>
+           <aside class="carrinho">
+    <h3>🛒 Carrinho</h3>
 
-    <table id="tabelaCarrinho">
-        <tr><td colspan="3">Nenhum item no carrinho ainda.</td></tr>
-    </table>
+    <ul id="lista-carrinho"></ul>
 
-    <h2>Total: <span id="totalCompra">R$ 0,00</span></h2>
+    <p class="total">Total: R$ <span id="total">0.00</span></p>
 
-    <button onclick="limparCarrinho()" class="button">Esvaziar Carrinho</button>
-</section>
-     
+    <button class="limpar" onclick="limparCarrinho()">Esvaziar Carrinho</button><br>
+
+
+    <label>Forma de Entrega</label>
+    <select id="tipoEntrega">
+        <option value="retirada">Retirada</option>
+        <option value="entrega">Entrega</option>
+    </select><br>
+
+    <label>Forma de Pagamento</label>
+    <select id="pagamento">
+        <option value="pix">PIX</option>
+        <option value="dinheiro">Dinheiro</option>
+        <option value="cartao">Cartão</option>
+    </select><br>
+
+    <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+</aside>
+
 
     <section id="dados-entrega" class="contato">
     <h1>📦 Dados do Pedido</h1>
@@ -204,18 +218,6 @@
         <textarea id="obsCliente" placeholder="Ex: Sem cobertura, ponto de referência..."></textarea>
     </div>
 
-    <h2>Forma de Entrega</h2>
-    <select id="tipoEntrega">
-        <option value="retirada">Retirada no local</option>
-        <option value="entrega">Entrega</option>
-    </select>
-
-    <h2>Forma de Pagamento</h2>
-    <select id="pagamento">
-        <option>Pix</option>
-        <option>Cartão (Crédito/Débito)</option>
-        <option>Dinheiro</option>
-    </select>
 </section>
 
 
