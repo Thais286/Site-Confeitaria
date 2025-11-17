@@ -1,88 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glacê Confeitaria</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/logo glace.png">
+    <!-- favicon: troquei pelo caminho da  logo/fav -->
+    <link rel="icon" href="imagens/logo glace.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+    <!-- NAVBAR = barra de navegação-->
     <header>
         <nav class="navbar">
             <h1 class="logo">GLACÊ</h1>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                 <li><a href="#produtos">Produtos</a></li>
-                  <li><a href="#sobre">Sobre</a></li>
-                   <li><a href="#contato">Contato</a></li>
-                   <li><a href="#localizacao"></a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home" class="hero"> <!-- Hero section é a primeira grande sessão , a q aparece logo de cara-->
-        <img class="logo-central" src="imagens/glace.png" alt="Logo Glacê">
-        <h2>Bem-vindo á Glacê Confeitaria</h2>
-        <p>Confeitaria com amor e carinho em cada detalhe</p>
-        <a class="button" href="#produtos">Ver produtos</a>
-    </section>
-
-
-    <section id="produtos" class="produtos">
-        <h2>Nossos produtos</h2>
-
-        <div class="lista-produtos"> <!-- Grid = Grade ,usado para organizar em blocos alinhados-->
-
-            <div classe="card">
-            <img src="imagens/copo ninho.png" alt="Produto 1">
-            <h3>Copo Ninho com Morango</h3>
-                <p>150ml</p>
-                <span class="preco">12.49</span>
-                <button onclick="addCarrinho('Copo Ninho com Morango', 12.49)">Adicionar</button>
-        </div>
-
-        <div classe="card">
-            <img src="imagens/ferreiro roche.png" alt="Produto 2">
-            <h3>Copo Ferreiro Rocher</h3>
-                <p>150ml</p>
-                <span class="preco">12.49</span>
-                <button onclick="addCarrinho('Copo Ferreiro Rocher', 12.49)">Adicionar</button>
-        </div>
-
-        <div classe="card">
-            <img src="imagens/bombom morango.png" alt="Produto 3">
-            <h3>Bombom aberto de morango</h3>
-                <p>180ml</p>
-                <span class="preco">10.00</span>
-                <button onclick="addCarrinho('Bombom aberto de morango', 10.00)">Adicionar</button>
-        </div>
-
-        <div classe="card">
-            <h3>Surpresa de uva</h3>
-                <p>180ml</p>
-                <span class="preco">9.49</span>
-                <button onclick="addCarrinho('Surpresa de uva', 9.49)">Adicionar</button>
-                <img src="imagens/surpresa de uva.png" alt="Produto 4">
-        </div>
-
-    </section>
-    <section id="sobre" class="sobre">
-        <h2>Sobre Nós</h2>
-        <p>A Glacê Confeitaria foi fundada em 2025 por Ester </br>
-            , que transformou sua paixão por doces caseiros em sabor para encantar.</br> Aqui você encontra bolos de pote, bombons, tortas, cookies e brownies, todos feitos com carinho e qualidade. </br> Cada doce é preparado artesanalmente para deixar o seu dia mais gostoso.</p>
-    </section>
-
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>WhatsApp:(31)8788-0429</p>
-        <p>Instagram: @confeitaria_glace</p>
-        <p>Localização: Rua Guaraci,108 - Lago Azul Ibirité-MG 32415-359</p>
+    <!-- HERO = é a 1 grande sessão a que aparece logo de cara-->
+    <main>
+        <section id="home" class="hero">
+            <!-- logo central (opacidade) -->
+            <img class="logo-central" src="imagens/glace.png" alt="Logo Glacê">
+            <div class="hero-content">
+                <h2>Bem-vindo à Glacê Confeitaria</h2>
+                <p>Confeitaria com amor e carinho em cada detalhe</p>
+                <a class="button" href="#produtos">Ver produtos</a>
+            </div>
         </section>
-        <footer>
-            <p>© 2025 Glacê Confeitaria</p>
-        </footer>
-        <script src="script.js"></script>
+
+        <!-- PRODUTOS -->
+        <section id="produtos" class="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <div class="lista-produtos">
+
+                <!-- PRODUTO 1 -->
+                <article class="card produto-item">
+                    <img src="imagens/copo ninho.png" alt="Copo Ninho com Morango">
+                    <div class="card-info">
+                        <h3>Copo Ninho com Morango</h3>
+                        <p class="desc">Brigadeiro de ninho, mousse de ninho e geleia caseira de morango,finalizado com morango fresco — 150ml</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>12,49</strong></span>
+                            <button onclick="addCarrinho('Copo Ninho com Morango', 12.49)">Adicionar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="card produto-item">
+                    <img src="imagens/ferreiro roche.png" alt="Copo Ferrero Rocher">
+                    <div class="card-info">
+                        <h3>Copo Ferrero Rocher</h3>
+                        <p class="desc">Brigadeiro ao leite, mousse de chocolate e crocante amendoim, nutella e ferreiro rocher — 150ml</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>12,49</strong></span>
+                            <button onclick="addCarrinho('Copo Ferrero Rocher', 12.49)">Adicionar</button>
+                        </div>
+
+                        <!-- PRODUTO 3 -->
+                <article class="card produto-item">
+                    <img src="imagens/bombom morango.png" alt="Bombom de morango">
+                    <div class="card-info">
+                        <h3>Bombom de morango</h3>
+                        <p class="desc">Morangos selecionados ,brigadeiro de ninho, ganache de c hocolate ao leite— 180ml</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>10,00</strong></span>
+                            <button onclick="addCarrinho('Bombom de morango', 10.00)">Adicionar</button>
+                        </div>
+
+                        <!-- PRODUTO 4 -->
+                <article class="card produto-item">
+                    <img src="imagens/surpresa de uva.png" alt="Surpresa de uva">
+                    <div class="card-info">
+                        <h3>Surpresa de uva</h3>
+                        <p class="desc">Uvas verdes selecionadas ,brigadeiro de ninho,ganache de chocolate ao leite— 180ml</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>09,49</strong></span>
+                            <button onclick="addCarrinho('Surpresa de uva', 9.49)">Adicionar</button>
+                        </div>
+
+                        <!-- PRODUTO 5 -->
+                <article class="card produto-item">
+                    <img src="imagens/surpresa ninho.png" alt="Surpresa de morango">
+                    <div class="card-info">
+                        <h3>Surpresa de uva</h3>
+                        <p class="desc">Morangos selecionados ,brigadeiro de ninho, ganache de c hocolate ao leite— 180ml</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>09,49</strong></span>
+                            <button onclick="addCarrinho('Surpresa de morango', 9.49)">Adicionar</button>
+                        </div>
+
+
+                         <!-- PRODUTO 6 -->
+                <article class="card produto-item">
+                    <img src="imagens/cookie chocolate.png" alt="Cookie de Nutella-Fatia">
+                    <div class="card-info">
+                        <h3>Cookie de Nutella-Fatia</h3>
+                        <p class="desc"> Massa de cookie recheada com nutella-Fatia</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>13,49</strong></span>
+                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 13.49)">Adicionar</button>
+                        </div>
+
+                         <!-- PRODUTO 7 -->
+                <article class="card produto-item">
+                    <img src="imagens/cookie.png" alt="Cookie Ningo com Nutella-Fatia">
+                    <div class="card-info">
+                        <h3>Cookie Ninho com Nutella-Fatia</h3>
+                        <p class="desc"> Massa de cookie recheada com brigadeiro de ninho com nutella-Fatia</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>13,49</strong></span>
+                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 13.49)">Adicionar</button>
+                        </div>
+
+                        <!-- PRODUTO 8 -->
+                <article class="card produto-item">
+                    <img src="imagens/fatia maracuja.png" alt="Maracuja trufado-Fatia">
+                    <div class="card-info">
+                        <h3>Maracuja trufado-Fatia</h3>
+                        <p class="desc"> Massa de chocolate ,mousse de maracuja trufado com brigadeiro ao leite</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>10,00</strong></span>
+                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 10.00)">Adicionar</button>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- PRODUTO 9 -->
+                <article class="card produto-item">
+                    <img src="imagens/escondidinho.png" alt="Escondidinho de morango com nutella">
+                    <div class="card-info">
+                        <h3>Escondidinho de morango com nutella</h3>
+                        <p class="desc">Pedaços de bRownie, morangos ,brigadeiro de ninho, finalizado com nutella-250ml.</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>14,49</strong></span>
+                            <button onclick="addCarrinho('Escondidinho de morango com nutella', 14.49)">Adicionar</button>
+                        </div>
+
+                        <!-- PRODUTO 9 -->
+                <article class="card produto-item">
+                    <img src="imagens/dois amores.png" alt="Escondidinho dois amores">
+                    <div class="card-info">
+                        <h3> Escondidinho dois amores</h3>
+                        <p class="desc">Pedaços de bRownie, morangos ,brigadeiro ao leite -250ml.</p>
+                        <div class="card-bottom">
+                            <span class="preco">R$ <strong>14,49</strong></span>
+                            <button onclick="addCarrinho('Escondidinho de morango com nutella', 14.49)">Adicionar</button>
+                        </div>
+
+
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CARRINHO (fixo) -->
+        <aside class="carrinho" aria-live="polite">
+            <h3>🛒 Carrinho</h3>
+            <ul id="lista-carrinho"></ul>
+            <p class="total">Total: R$ <span id="total">0.00</span></p>
+
+            <label for="tipoEntrega">Forma de entrega</label>
+            <select id="tipoEntrega">
+                <option value="retirada">Retirada</option>
+                <option value="entrega">Entrega</option>
+            </select>
+
+            <label for="pagamento">Pagamento</label>
+            <select id="pagamento">
+                <option value="pix">PIX</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão</option>
+            </select>
+
+            <div id="qrcode" class="qrcode">
+                <img src="" alt="QR Code para pagamento" />
+            </div>
+
+            <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
+        </aside>
+
+        <!-- SOBRE (igual à imagem: foto à esquerda, card branco com texto à direita) -->
+        <section id="sobre" class="sobre">
+            <div class="sobre-box">
+                <div class="sobre-img">
+                    <!-- substitua pelo link da foto da confeiteira -->
+                    <img src="imagens/ester.png" alt="Confeiteira Glacê">
+                </div>
+
+                <div class="sobre-texto">
+                    <h2>Confeiteira Glacê</h2>
+                    <p class="nome">Ester — Fundadora & Chef confeiteira</p>
+                    <p>
+                        Sou apaixonada pela confeitaria e dedico cada receita a criar momentos
+                        especiais para você. Aqui, cada doce é feito com carinho, qualidade e
+                        atenção aos mínimos detalhes. Usamos ingredientes selecionados e receitas
+                        testadas para garantir sabor e textura perfeitos. Venha experimentar!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p><a href="https://wa.me/553187880429" target="_blank" rel="noopener">WhatsApp</a></p>
+            <p><a href="https://instagram.com/confeitaria_glace" target="_blank" rel="noopener">Instagram</a></p>
+            <p><a href="https://maps.google.com/?q=Rua+Guaraci,+108,+Lago+Azul,+Ibirité" target="_blank" rel="noopener">Localização</a></p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Glacê Confeitaria</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
 </body>
 </html>
