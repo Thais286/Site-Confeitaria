@@ -1,66 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #fff0f5;
+
+    body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(45deg,#510a0a,white);
+}
+
+
+.nav{
+    background: #8C2F1B;
+    color: rgb(166, 42, 42);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px; /* esspçao entre os itens*/
+}
+
+.navbar a {
+    color: rgb(195, 73, 73);
+    text-decoration: none;
+    font-weight: 600px;
+}
+
+section.imagem{
+    background-color: #8C2F1B;
+    color: white;
+    box-shadow: inset 6px 6px 6px 13px 0px;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+.hero{
+    background: #8C2F1B;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.button{
+    background: white;
+    color: #8C2F1B;
+    padding: 12px 25px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.produtos, .sobre, .contato{
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* LOGO */
-.logo {
-    width: 180px;
-    margin: 20px auto;
-    display: block;
-    filter: saturate(2); /* cor mais viva */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-/* CONFEITEIRA */
-.foto-confeiteira {
-    width: 150px; /* menor */
-    border-radius: 20px;
-}
-
-.confeiteira p {
-    font-size: 18px;
-    color: #b84b7a;
-}
-
-/* TÍTULO */
-.titulo-secao {
-    margin-top: 30px;
-    color: #b84b7a;
-    font-size: 26px;
+.card{
+    background: #F7D7D0;
+    padding: 40px 20px;
+    border-radius: 10px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-/* GALERIA */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 12px;
+footer{
+    background: #8C2F1B;
+    color: white;
+    text-align: center;
     padding: 20px;
-    max-width: 900px;
-    margin: auto;
 }
-
-.galeria img {
-    width: 100%;
-    max-width: 150px; /* controla o tamanho FIXO */
-    border-radius: 12px;
-    display: block;
-    margin: auto;     /* centraliza */
-    transition: .3s;
-}
-
-.galeria img:hover {
-    transform: scale(1.05);
-}
-
 
 /* CONTATO */
 .contato {
     width: 60%;
     margin: 10px auto;
-    background: #b84b7a; /* cor da logo */
+    background: #c56942; /* cor da logo */
     color: white;
     border-radius: 15px;
     padding: 10px;
@@ -69,7 +94,7 @@ body {
 
 .contato td {
     padding: 10px;
-    border-bottom: 1px solid #ffffff44;
+    border-bottom: 1px solid #fffffff9;
 }
 
 .contato tr:last-child td {
