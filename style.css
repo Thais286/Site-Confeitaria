@@ -1,49 +1,55 @@
 
-    body{
-    margin: 0px;
+    /* GERAL */
+body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background:linear-gradient(45deg,#510a0a,white);
+    background: linear-gradient(45deg, #510a0a, white);
 }
 
-
-.nav{
+/* NAVBAR */
+.navbar {
     background: #8C2F1B;
-    color: rgb(166, 42, 42);
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar ul{
+.navbar .logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar ul {
     display: flex;
     list-style: none;
-    gap: 20px; /* esspçao entre os itens*/
+    gap: 20px;
 }
 
 .navbar a {
-    color: rgb(195, 73, 73);
-    text-decoration: none;
-    font-weight: 600px;
-}
-
-section.imagem{
-    background-color: #8C2F1B;
     color: white;
-    box-shadow: inset 6px 6px 6px 13px 0px;
-    background-size: cover;
-    background-position: right center;
-    background-attachment: fixed;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.hero{
+/* LOGO CENTRAL DA HERO */
+.logo-central {
+    width: 180px;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* HERO */
+.hero {
     background: #8C2F1B;
     color: white;
     text-align: center;
     padding: 120px 20px;
 }
 
-.button{
+.button {
     background: white;
     color: #8C2F1B;
     padding: 12px 25px;
@@ -54,49 +60,135 @@ section.imagem{
     text-decoration: none;
 }
 
-.produtos, .sobre, .contato{
+/* PRODUTOS */
+.produtos {
     padding: 60px 20px;
     text-align: center;
 }
 
-.grid{
+.lista-produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 20px;
-    padding: 20px;
 }
 
-.card{
+/* CARD */
+.card {
     background: #F7D7D0;
-    padding: 40px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
 }
 
-footer{
+/* IMAGENS DOS PRODUTOS  — RESPONSIVAS */
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* TITULO DO PRODUTO */
+.card-info h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+/* DESCRIÇÃO */
+.desc {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+/* PREÇO E BOTÃO */
+.card-bottom {
+    margin-top: 10px;
+}
+
+/* BOTAO ADICIONAR */
+.card button {
     background: #8C2F1B;
     color: white;
-    text-align: center;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 60px 20px;
+}
+
+.sobre-box {
+    display: flex;
+    background: #8C2F1B;
+    color: white;
     padding: 20px;
+    border-radius: 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* IMAGEM DA CONFEITEIRA — RESPONSIVA E MENOR */
+.sobre-img img {
+    width: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* TEXTO SOBRE */
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 26px;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.4;
 }
 
 /* CONTATO */
 .contato {
     width: 60%;
     margin: 10px auto;
-    background: #c56942; /* cor da logo */
+    background: #c56942;
     color: white;
     border-radius: 15px;
     padding: 10px;
     font-size: 20px;
 }
 
-.contato td {
-    padding: 10px;
-    border-bottom: 1px solid #fffffff9;
+/* CARRINHO — IGUAL AO CONTATO */
+.carrinho {
+    width: 260px;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    background: #c56942;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.contato tr:last-child td {
-    border-bottom: none;
+/* CARRINHO TEXTO */
+.carrinho h3 {
+    margin-top: 0;
+}
+
+/* IMAGENS FICAREM TODAS RESPONSIVAS */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    background: #8C2F1B;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
