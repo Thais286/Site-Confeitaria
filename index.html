@@ -176,11 +176,29 @@
         </section>
 
         <!-- CARRINHO -->
+        <!-- CARRINHO -->
         <aside class="carrinho" aria-live="polite">
             <h3>🛒 Carrinho</h3>
             <ul id="lista-carrinho"></ul>
+            <p class="total">Total: R$ <span id="total">0.00</span></p>
 
-@@ -190,42 +198,42 @@
+            <label for="tipoEntrega">Forma de entrega</label>
+            <select id="tipoEntrega">
+                <option value="retirada">Retirada</option>
+                <option value="entrega">Entrega</option>
+            </select>
+
+            <label for="pagamento">Pagamento</label>
+            <select id="pagamento">
+                <option value="pix">PIX</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão</option>
+            </select>
+
+            <div id="qrcode" class="qrcode">
+                <img src="" alt="QR Code para pagamento" />
+            </div>
+
             <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
         </aside>
 
