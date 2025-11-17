@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8" />
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glacê Confeitaria</title>
+
     <link rel="icon" href="imagens/logo glace.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,6 +23,7 @@
     <!-- HERO -->
     <main>
         <section id="home" class="hero">
+
             <img class="logo-central" src="imagens/glace.png" alt="Logo Glacê">
             <div class="hero-content">
                 <h2>Bem-vindo à Glacê Confeitaria</h2>
@@ -105,6 +104,7 @@
                 </article>
 
                 <!-- PRODUTO 6 -->
+
                 <article class="card produto-item">
                     <img src="imagens/cookie chocolate.png" alt="Cookie de Nutella - Fatia">
                     <div class="card-info">
@@ -140,6 +140,7 @@
                             <span class="preco">R$ <strong>10,00</strong></span>
                             <button onclick="addCarrinho('Maracuja trufado', 10.00)">Adicionar</button>
                         </div>
+
                     </div>
                 </article>
 
@@ -166,6 +167,8 @@
                             <span class="preco">R$ <strong>14,49</strong></span>
                             <button onclick="addCarrinho('Escondidinho dois amores', 14.49)">Adicionar</button>
                         </div>
+
+
                     </div>
                 </article>
 
@@ -176,25 +179,8 @@
         <aside class="carrinho" aria-live="polite">
             <h3>🛒 Carrinho</h3>
             <ul id="lista-carrinho"></ul>
-            <p class="total">Total: R$ <span id="total">0.00</span></p>
 
-            <label for="tipoEntrega">Forma de entrega</label>
-            <select id="tipoEntrega">
-                <option value="retirada">Retirada</option>
-                <option value="entrega">Entrega</option>
-            </select>
-
-            <label for="pagamento">Pagamento</label>
-            <select id="pagamento">
-                <option value="pix">PIX</option>
-                <option value="dinheiro">Dinheiro</option>
-                <option value="cartao">Cartão</option>
-            </select>
-
-            <div id="qrcode" class="qrcode">
-                <img src="" alt="QR Code para pagamento" />
-            </div>
-
+@@ -190,42 +198,42 @@
             <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
         </aside>
 
@@ -203,6 +189,7 @@
             <div class="sobre-box">
 
                 <div class="sobre-img">
+
                     <img src="imagens/ester dois.png" alt="Confeiteira Glacê">
                 </div>
 
@@ -213,6 +200,7 @@
                         Sou apaixonada pela confeitaria e dedico cada receita a criar momentos
                         especiais para você. Cada doce é feito com carinho, qualidade e atenção aos detalhes.
                         Ingredientes selecionados e receitas testadas garantem sabor e textura perfeita.
+
                     </p>
                 </div>
 
@@ -233,6 +221,7 @@
     <footer>
         <p>© 2025 Glacê Confeitaria</p>
     </footer>
+
 
     <script src="script.js"></script>
 </body>
