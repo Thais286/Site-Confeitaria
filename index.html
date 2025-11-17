@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glacê Confeitaria</title>
-    <!-- favicon: troquei pelo caminho da  logo/fav -->
     <link rel="icon" href="imagens/logo glace.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR = barra de navegação-->
+    <!-- NAVBAR -->
     <header>
         <nav class="navbar">
             <h1 class="logo">GLACÊ</h1>
@@ -23,10 +22,9 @@
         </nav>
     </header>
 
-    <!-- HERO = é a 1 grande sessão a que aparece logo de cara-->
+    <!-- HERO -->
     <main>
         <section id="home" class="hero">
-            <!-- logo central (opacidade) -->
             <img class="logo-central" src="imagens/glace.png" alt="Logo Glacê">
             <div class="hero-content">
                 <h2>Bem-vindo à Glacê Confeitaria</h2>
@@ -46,7 +44,7 @@
                     <img src="imagens/copo ninho.png" alt="Copo Ninho com Morango">
                     <div class="card-info">
                         <h3>Copo Ninho com Morango</h3>
-                        <p class="desc">Brigadeiro de ninho, mousse de ninho e geleia caseira de morango,finalizado com morango fresco — 150ml</p>
+                        <p class="desc">Brigadeiro de ninho, mousse de ninho e geleia caseira de morango — 150ml</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>12,49</strong></span>
                             <button onclick="addCarrinho('Copo Ninho com Morango', 12.49)">Adicionar</button>
@@ -59,112 +57,122 @@
                     <img src="imagens/ferreiro roche.png" alt="Copo Ferrero Rocher">
                     <div class="card-info">
                         <h3>Copo Ferrero Rocher</h3>
-                        <p class="desc">Brigadeiro ao leite, mousse de chocolate e crocante amendoim, nutella e ferreiro rocher — 150ml</p>
+                        <p class="desc">Brigadeiro ao leite, mousse de chocolate, crocante amendoim, nutella e Ferrero Rocher — 150ml</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>12,49</strong></span>
                             <button onclick="addCarrinho('Copo Ferrero Rocher', 12.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- PRODUTO 3 -->
+                <!-- PRODUTO 3 -->
                 <article class="card produto-item">
                     <img src="imagens/bombom morango.png" alt="Bombom de morango">
                     <div class="card-info">
                         <h3>Bombom de morango</h3>
-                        <p class="desc">Morangos selecionados ,brigadeiro de ninho, ganache de c hocolate ao leite— 180ml</p>
+                        <p class="desc">Morangos selecionados, brigadeiro de ninho, ganache de chocolate ao leite — 180ml</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>10,00</strong></span>
                             <button onclick="addCarrinho('Bombom de morango', 10.00)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- PRODUTO 4 -->
+                <!-- PRODUTO 4 -->
                 <article class="card produto-item">
                     <img src="imagens/surpresa de uva.png" alt="Surpresa de uva">
                     <div class="card-info">
                         <h3>Surpresa de uva</h3>
-                        <p class="desc">Uvas verdes selecionadas ,brigadeiro de ninho,ganache de chocolate ao leite— 180ml</p>
+                        <p class="desc">Uvas verdes selecionadas, brigadeiro de ninho e ganache ao leite — 180ml</p>
                         <div class="card-bottom">
-                            <span class="preco">R$ <strong>09,49</strong></span>
+                            <span class="preco">R$ <strong>9,49</strong></span>
                             <button onclick="addCarrinho('Surpresa de uva', 9.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- PRODUTO 5 -->
+                <!-- PRODUTO 5 -->
                 <article class="card produto-item">
                     <img src="imagens/surpresa ninho.png" alt="Surpresa de morango">
                     <div class="card-info">
-                        <h3>Surpresa de uva</h3>
-                        <p class="desc">Morangos selecionados ,brigadeiro de ninho, ganache de c hocolate ao leite— 180ml</p>
+                        <h3>Surpresa de morango</h3>
+                        <p class="desc">Morangos selecionados, brigadeiro de ninho e ganache de chocolate ao leite — 180ml</p>
                         <div class="card-bottom">
-                            <span class="preco">R$ <strong>09,49</strong></span>
+                            <span class="preco">R$ <strong>9,49</strong></span>
                             <button onclick="addCarrinho('Surpresa de morango', 9.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-
-                         <!-- PRODUTO 6 -->
+                <!-- PRODUTO 6 -->
                 <article class="card produto-item">
-                    <img src="imagens/cookie chocolate.png" alt="Cookie de Nutella-Fatia">
+                    <img src="imagens/cookie chocolate.png" alt="Cookie de Nutella - Fatia">
                     <div class="card-info">
-                        <h3>Cookie de Nutella-Fatia</h3>
-                        <p class="desc"> Massa de cookie recheada com nutella-Fatia</p>
+                        <h3>Cookie de Nutella - Fatia</h3>
+                        <p class="desc">Massa de cookie recheada com Nutella — Fatia</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>13,49</strong></span>
-                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 13.49)">Adicionar</button>
+                            <button onclick="addCarrinho('Cookie de Nutella', 13.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                         <!-- PRODUTO 7 -->
+                <!-- PRODUTO 7 -->
                 <article class="card produto-item">
-                    <img src="imagens/cookie.png" alt="Cookie Ningo com Nutella-Fatia">
+                    <img src="imagens/cookie.png" alt="Cookie Ninho com Nutella - Fatia">
                     <div class="card-info">
-                        <h3>Cookie Ninho com Nutella-Fatia</h3>
-                        <p class="desc"> Massa de cookie recheada com brigadeiro de ninho com nutella-Fatia</p>
+                        <h3>Cookie Ninho com Nutella - Fatia</h3>
+                        <p class="desc">Massa de cookie recheada com brigadeiro de ninho e Nutella — Fatia</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>13,49</strong></span>
-                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 13.49)">Adicionar</button>
+                            <button onclick="addCarrinho('Cookie Ninho com Nutella', 13.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- PRODUTO 8 -->
+                <!-- PRODUTO 8 -->
                 <article class="card produto-item">
-                    <img src="imagens/fatia maracuja.png" alt="Maracuja trufado-Fatia">
+                    <img src="imagens/fatia maracuja.png" alt="Maracujá trufado - Fatia">
                     <div class="card-info">
-                        <h3>Maracuja trufado-Fatia</h3>
-                        <p class="desc"> Massa de chocolate ,mousse de maracuja trufado com brigadeiro ao leite</p>
+                        <h3>Maracujá trufado - Fatia</h3>
+                        <p class="desc">Massa de chocolate, mousse de maracujá trufado e brigadeiro ao leite</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>10,00</strong></span>
-                            <button onclick="addCarrinho('Cookie de Nutella-Fatia', 10.00)">Adicionar</button>
+                            <button onclick="addCarrinho('Maracuja trufado', 10.00)">Adicionar</button>
                         </div>
-
                     </div>
                 </article>
 
                 <!-- PRODUTO 9 -->
                 <article class="card produto-item">
-                    <img src="imagens/escondidinho.png" alt="Escondidinho de morango com nutella">
+                    <img src="imagens/escondidinho.png" alt="Escondidinho de morango com Nutella">
                     <div class="card-info">
-                        <h3>Escondidinho de morango com nutella</h3>
-                        <p class="desc">Pedaços de bRownie, morangos ,brigadeiro de ninho, finalizado com nutella-250ml.</p>
+                        <h3>Escondidinho de morango com Nutella</h3>
+                        <p class="desc">Pedaços de brownie, morangos, brigadeiro de ninho e Nutella — 250ml</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>14,49</strong></span>
-                            <button onclick="addCarrinho('Escondidinho de morango com nutella', 14.49)">Adicionar</button>
+                            <button onclick="addCarrinho('Escondidinho de morango com Nutella', 14.49)">Adicionar</button>
                         </div>
+                    </div>
+                </article>
 
-                        <!-- PRODUTO 9 -->
+                <!-- PRODUTO 10 -->
                 <article class="card produto-item">
                     <img src="imagens/dois amores.png" alt="Escondidinho dois amores">
                     <div class="card-info">
-                        <h3> Escondidinho dois amores</h3>
-                        <p class="desc">Pedaços de brownie, morangos ,brigadeiro ao leite -250ml.</p>
+                        <h3>Escondidinho dois amores</h3>
+                        <p class="desc">Pedaços de brownie, morangos e brigadeiro ao leite — 250ml</p>
                         <div class="card-bottom">
                             <span class="preco">R$ <strong>14,49</strong></span>
-                            <button onclick="addCarrinho('Escondidinho de morango com nutella', 14.49)">Adicionar</button>
+                            <button onclick="addCarrinho('Escondidinho dois amores', 14.49)">Adicionar</button>
                         </div>
-
-
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- CARRINHO (fixo) -->
+        <!-- CARRINHO -->
         <aside class="carrinho" aria-live="polite">
             <h3>🛒 Carrinho</h3>
             <ul id="lista-carrinho"></ul>
@@ -190,11 +198,11 @@
             <button class="finalizar" onclick="finalizarPedido()">Finalizar Pedido</button>
         </aside>
 
-        <!-- SOBRE (igual à imagem: foto à esquerda, card branco com texto à direita) -->
+        <!-- SOBRE -->
         <section id="sobre" class="sobre">
             <div class="sobre-box">
+
                 <div class="sobre-img">
-                    <!-- substitua pelo link da foto da confeiteira -->
                     <img src="imagens/ester dois.png" alt="Confeiteira Glacê">
                 </div>
 
@@ -203,21 +211,22 @@
                     <p class="nome">Ester — Fundadora & Chef confeiteira</p>
                     <p>
                         Sou apaixonada pela confeitaria e dedico cada receita a criar momentos
-                        especiais para você. Aqui, cada doce é feito com carinho, qualidade e
-                        atenção aos mínimos detalhes. Usamos ingredientes selecionados e receitas
-                        testadas para garantir sabor e textura perfeitos. Venha experimentar!
+                        especiais para você. Cada doce é feito com carinho, qualidade e atenção aos detalhes.
+                        Ingredientes selecionados e receitas testadas garantem sabor e textura perfeita.
                     </p>
                 </div>
+
             </div>
         </section>
 
         <!-- CONTATO -->
         <section id="contato" class="contato">
             <h2>Contato</h2>
-            <p><a href="https://wa.me/553187880429" target="_blank" rel="noopener">WhatsApp</a></p>
-            <p><a href="https://instagram.com/confeitaria_glace" target="_blank" rel="noopener">Instagram</a></p>
-            <p><a href="https://maps.google.com/?q=Rua+Guaraci,+108,+Lago+Azul,+Ibirité" target="_blank" rel="noopener">Localização</a></p>
+            <p><a href="https://wa.me/553187880429" target="_blank">WhatsApp</a></p>
+            <p><a href="https://instagram.com/confeitaria_glace" target="_blank">Instagram</a></p>
+            <p><a href="https://maps.google.com/?q=Rua+Guaraci,+108,+Lago+Azul,+Ibirité" target="_blank">Localização</a></p>
         </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -225,7 +234,6 @@
         <p>© 2025 Glacê Confeitaria</p>
     </footer>
 
-    <!-- SCRIPTS -->
     <script src="script.js"></script>
 </body>
 </html>
